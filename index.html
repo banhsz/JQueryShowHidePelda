@@ -19,3 +19,42 @@
 	<p id="5" class="zoldseg">Uborka</p>
 </body>
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$("#gomb_gyumolcsok").click(function()
+		{
+			$(".gyumolcs").show();
+			$(".zoldseg").hide();
+		});
+	});
+
+	$(document).ready(function()
+	{
+		$("#gomb_zoldsegek").click(function()
+		{
+			$(".gyumolcs").hide();
+			$(".zoldseg").show();
+		});
+	});
+
+	$(document).ready(function()
+	{
+		$("#gomb_minden").click(function()
+		{
+			$(".gyumolcs").show();
+			$(".zoldseg").show();
+		});
+	});
+
+	$(document).ready(function()
+	{
+		$("#gomb_zold").click(function()
+		{
+			$("#1").css({"color":"green","font-size":"30px"});
+		});
+	});
+
+
+</script>
